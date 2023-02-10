@@ -1,0 +1,616 @@
+{"intents":
+        [
+	      {
+              "tag": "greeting",
+              "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hey"],
+              "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+              "context_set": ""
+            },
+            {
+              "tag": "goodbye",
+              "patterns": ["Bye", "See you later", "Goodbye", "quit"],
+              "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+            },
+            {
+              "tag": "",
+              "patterns": [""],
+              "responses": ["Not Found!! Please contact the admin dept"]
+            },
+            {     
+              "tag": "thanks",
+              "patterns": ["Thanks", "Thank you", "That's helpful"],
+              "responses": ["Happy to help!", "Any time!", "My pleasure"]
+            },
+            {
+              "tag": "admission",
+              "patterns": ["How to apply in SRM?","How can i apply in Srm","Application form in SRM","SRM Application form"],
+              "responses":[ "Candidate can apply online by visiting our website and fill up the online available application form: http://admissions.srmuniversity.ac.in"]
+            },
+            {
+              "tag": "requirements",
+              "patterns": ["What are the admission requirements?","Admission requirements in SRM","What are the requirements needed for the admission in SRM?" ],
+              "responses":[ "A candidate is required to meet eligibility criteria for their respective interested programme. One needs to produce required set of documents at the time of seeking admission"]
+            },
+            {
+              "tag": "fee",
+              "patterns": ["Fee structure for arts and science","What is the fees structure for arts and science in SRM?","Fees for arts and science in SRM university","Fees in Srm"],
+              "responses":[ "FACULTY OF SCIENCE AND HUMANITIES\nCourse Tuition Fee (Annual)\nB.A. - English (Hons.) 52,500/-\nB.A. - Economics (Hons.) 52,500/-\nB.A. - Political Science (Hons.) 52,500-\nB.A. - Psychology (Hons.) 52,500/-\nB.C.A. 52,500/-\nB.Sc. - Agriculture Science (Hons.) 1,50,000/-\nB.Sc. - Chemistry (Hons.) 52,500/-\nB.Sc. - Food Technology (Hons.) 52,500/-\nB.Sc. - Mathematics (Hons.) 52,500/-\nB.Sc. - Physics (Hons.) 52,500/-\nB.Sc. - Statistics (Hons.) 52,500/-\nM.A. - English 52,500/-\nMCA 52500/-\nM.Sc. - Biotechnology 52,500/-\nM.Sc. - Chemistry 52,500/-\nM.Sc. - Mathematics 52,500/-\nM.Sc - Physics 52,500/-\nM.Sc. - Microbiology 52,500/-\nM.Sc. - Environmental Science 52,500/-\n"]
+            },
+            {
+              "tag": "dress code",
+              "patterns": ["What is the dress code in srm ?","Dress code in Srm","Dress code allowed in Srm"],
+              "responses": ["Dress Code\n \nBoys\nTrousers and Collared shirts\nShoes and Socks.\n\nGirls\nFormal Wear: Chudidar\nFormal Foot Wear\nHair beyond shoulder length to be tied up.\n"]
+            },
+            {
+              "tag": "furnishings",
+              "patterns": ["What room furnishings are provided by the hostel?","How the rooms are furnished in Srm hostel","What are the room facilities that is been provided in Srm hostel?","Srm hostel facilities"],
+              "responses":["The rooms come equipped with a table, chair, cot and a cupboard for each student. All the rooms are triple sharing with 2 fans and sufficient sockets. A big sized mirror is provided in each room."]
+            },
+            {
+              "tag": "necessary",
+              "patterns": ["What necessary items must students bring to the hostel?","What are the aditional items that should be brought by the hostel students in Srm","List of necessary items that are permitted in hostel"],
+              "responses":[ "The bed and bathroom accessories, such as mattresses, pillows, bed covers, buckets, mugs etc., need to be purchased by the students. The students can purchase the same at the University shops within the campus"]
+            },
+            {
+              "tag": "facilities_hostel",
+              "patterns": ["What are the facilities available for the students in the hostel?","What kind of facilities is provided for the hostel students in Srm?","The facilities provided for hostel students","What is the hostel facilities that is been provided for the students?"],
+              "responses": ["Each hostel block has a R.O. Plant and Solar Heater. Hence pure drinking water and hot water for bath are available. The hostels are Wi-Fi enabled."]
+            },
+            {
+              "tag": "hostelmess",
+              "patterns": ["What are the Hostel Mess Facilities?","Tell me about the hostelmess facilities in Srm","What kind of facilities is provided in hostelmess?","Mess facilities in Srm hostel"],
+              "responses": ["The Hostel Mess is run by the management. Menu will be displayed on the notice board. Changes to the menu can be made through the Mess Committee. In addition to the Mess service, Canteens and Food courts are also available for students? use"]
+            },
+            {
+              "tag": "laundry",
+              "patterns": ["Is there a Laundry Service available in the hostel?","What are the laundary services available in hostel?","Laundary services in Srm hostel","Do hostels in Srm have a laundary service?"],
+              "responses": ["SRM Hostel provides laundry and dry cleaning service to the hostellers. Equipped with state-of-the art machinery, every kind of cloth and fabric can be serviced."]
+            },
+            {
+              "tag": "syllabus",
+              "patterns": ["Does KTR and ramapuram have same syllabus?","Do KTR & ramapuram campus share the same syllabus?","Is the same syllabus followed in KTR & ramapuram campus?"],
+              "responses": ["Yes"]
+            },
+            {
+              "tag": "sports_quota",
+              "patterns":[ "Is there any Sports Quota, if yes, how to apply?","Do Srm have Sports Quota & how to apply in it?","Does Srm have Sports Quota?"],
+              "responses":[ "Yes. Any scholarships that are to be obtained will be approved by the scholarship committee."]
+            },
+            {
+              "tag": "language",
+              "patterns":[ "What mode of language used for Teaching","What is the common language used for teaching","Mode of language for teaching","What language is used for teaching in Srm?"],
+              "responses":["English is the language used for teaching."]
+            },
+            {
+              "tag": "entrance",
+              "patterns": ["Is SRM entrance easy?","Is it easy to crack Srm entrance?","Does Srm entrance is easy to clear?"],
+              "responses":["Yes definitely it is very easy to crack SRMJEEE engineering entrance exam if you are prepared well for jee mains entrance exam"]
+            },
+            {
+              "tag": "srm_location",
+              "patterns":[ "Where is SRM located?","Loaction of Srm","Where is the three campuses of Srm located?","How many campuses are there in Srm & where is it located?"],
+              "responses":[ "SRM has 3 campuses in chennai. One is near around 1/2 hour drive from Chennai airport, another campus is in Ramapuram bharathi salai and the third campus is in Vadapalani."]
+            },
+            {
+              "tag": "programs",
+              "patterns": ["What are the programs offered by SRM Institute of Science and Technology (formerly known as SRM University)?","Programs offered in Srm","How many courses are available in Srm?" ],
+              "responses":[ "SRM Institute of Science and Technology (formerly known as SRM University) offers undergraduate, post graduate and Doctoral programs in Engineering, Architecture, Management, Medicine, Dentistry, Pharmacy, Nursing, Allied Health Sciences, Science and Humanities, Hotel and Catering Management, Film Technology, etc totaling 95 undergraduate programs, 78 master programs."]
+            },
+            {
+              "tag": "application",
+              "patterns":[ "When do I start to apply?","When does the admission starts at Srm every year?","When can i apply at Srm?"],
+              "responses": ["Candidates can start applying from 1st of October / January every year."]
+            },
+            {
+              "tag": "application_process",
+              "patterns":[ "Once I apply what will happen?","What is the procedure once i apply in Srm?","Procedure after applying in Srm"],
+              "responses": ["Once you send in your application along with the required documents, we will register it and an application number will be allotted to you. If the application is complete and found eligible, a provisional admission letter will be sent to you. In this letter we will let you know as to when we will be offering the admission letters or if If your application is incomplete, we will write to you requesting to submit the pending documents / information."]
+            },
+            {
+              "tag": "grade",
+              "patterns": ["eligibility requirements for students holding 'O' Level and 'A' Level qualification","eligibility required to graduate","Eligibility requirements for students holding 'O' Level and 'A' Level qualification"],
+              "responses":[ "For MBBS and BDS you must have taken Physics, Chemistry , Biology and English at A Level besides FIVE passes in O Level. Passing of these courses at O Level or A Level alone will not be considered as adequate.\nFor other programs, FIVE O Level passes and TWO A Level passes OR FOUR O Level passes and THREE A Level passes are considered equivalent to 10 + 2 qualification and can be considered for admission if the student has taken appropriate courses that will meet the eligibility requirements for the individual program.\n"]
+            },
+            {
+              "tag": "agents",
+              "patterns":[ "Do you have any agents through whom we can apply?","Do Srm have agents who can help with admisission?","SRM agents through whom we can apply" ],
+              "responses": "SRM Institute of Science and Technology (formerly known as SRM University) has a network of authorized Student Information Centers to promote the university for the limited purpose of international admissions for the academic year 2015 ? 2016. Please visit our website for further info - srmist.edu.in."
+            },
+            {
+              "tag": "nri",
+              "patterns": ["Can a nri candidate apply under domestic category?","Does an nri candidate eligible to apply under domestic category?","What is the eligibility criteria for an nri candidate to apply in SRM?","Eligibility criteria for an nri candidate" ],
+              "responses": ["As per UGC guidelines, a candidate who has studied the qualifying examinations (11th and 12th ) outside of India (even if affiliated to CBSE) must apply under NRI category only and NOT under domestic category. But if the candidate has studied the qualifying examinations (11th and 12th ) within India ( even if affiliated to foreign educational boards) can apply either under domestic category or under NRI sponsored category. They can apply only under any one category and not under both categories."]
+            },
+            {
+              "tag": "nri_entrance",
+              "patterns": ["I am an NRI. Can I take the SRM Entrance Examination?","Will an NRI candidate able to take the SRM Entrance Examination?","Can an NRI apply for SRMJEE ?"],
+              "responses":[ "Yes. NRI/PIO/OCI card holders can apply for SRMJEE and can avail 35% annual scholarship on tuition fee SRMJEEE as per SRMJEE counseling norms."]
+            },
+            {
+              "tag": "sponsored",
+              "patterns": ["Can an NRI sponsored student pay the course /tuition fee in Indian rupees?","Will SRM accept NRI sponsored student pay the fees in Indian rupees?","Will SRM allow NRI sponsored student to pay the fees in Indian rupees?"],
+              "responses": ["No. Course/ tuition fee has to be paid in US Dollars only, by the sponsor."]
+            },
+            {
+              "tag": "domestic",
+              "patterns": ["In case both of my parents return to India after my admission, can I be treated under domestic category from the subsequent year onwards?"],
+              "responses": ["No. The status of the student remains the same as that prevailed at the time of admission. Hence even if both the parents return to India once for all, the student once admitted under NRI / NRI sponsored category will remain to be under NRI / NRI Sponsored category only."]
+            },
+            {
+              "tag": "transferred",
+              "patterns": ["Whether the book / Material / bus fees can be wire transferred along with the hostel fees?","Can i transfer the book / Material / bus fees along with the hostel fees?","Can i pay the book / Material / bus fees along with the hostel fees?"],
+              "responses": ["No. The book / Material /Bus fees are to be paid in Indian Rupees through Bank draft at the time of admission."]
+            },
+            {
+              "tag": "paying",
+              "patterns": ["Whether cheque / cash can be accepted for paying the tuition fees / hostel fees etc ?","Can i pay the tution fees via cheque / cash?","Will SRM accept students to pay the tution fees as cheque / cash?"],
+              "responses": ["No. The most preferred payment mode is by wire transfer / electronic transfer."]
+            },
+            {
+              "tag": "electronic",
+              "patterns": ["Whether Fridge/ washing machine/ Microwave/ room heater are provided in the hostel or the student can have their own electronic items, also should they pay anything extra for using those items?","Does SRM provides students with Fridge/ washing machine/ Microwave/ room heater in the hostel?","Do hostels in SRM are provided with Fridge/ washing machine/ Microwave/ room heater for students & should they pay additional charges for the usage?"],
+              "responses": ["Fridge/ washing machine/ Microwave/ room heater will NOT be provided in any of the hostels. But those desirous of using any electrical gadgets or appliances must take prior written permission from Hostel authorities and have to adhere to the safety standards prescribed by the authorities from time to time. The students have to pay additional electricity charges as fixed by the hostel authorities."]
+            },
+            {
+              "tag": "room",
+              "patterns":[ "Contact details of SRM Hotel to book a room for few days?","Whom should i contact to book a room in SRM Hotel?","Contact details to book a room in SRM Hotel" ],
+              "responses": ["THE SRM HOTEL ,\nSRM Institute of Science and Technology (formerly known as SRM University)\nSRM Nagar, Kattankulathur - 603 203\nTamil Nadu, India\nPh: +91- 44 - 4743 2000, 27453157 / 158\nFax: +91- 44 - 27454250\nE-Mail: srmhotel_chennai@yahoo.co.in\n"]
+            },
+            {
+              "tag": "internet",
+              "patterns": ["Do you have internet facilities at SRM campus?","Do SRM campus have internet facilities?","Does SRM have Wi-Fi facility?"],
+              "responses": ["Yes, Campus-wide Wi-Fi facility is available."]
+            },
+            {
+              "tag": "air_conditioned",
+              "patterns": ["Whether the classrooms are air conditioned?","Are the classrooms at SRM air conditioned?","Is the SRM classrooms air conditioned?"],
+              "responses": ["No"]
+            },
+            {
+              "tag": "mobile",
+              "patterns": ["Whether the students are permitted to use mobile phones?","Is the usage of mobile phones permitted inside the campus?","Is it allowed to use mobile phones in the campus?"],
+              "responses": ["Inside the class: Strictly No\nOutside of class hours: Yes\n"]
+            },
+            {
+              "tag": "foreign_languages",
+              "patterns": ["Are there any foreign languages taught?","Do SRM offers foreign languages to their students?","Any foreign language taught at SRM?"],
+              "responses": [" Yes. It offers French, Japanese, German, Chinese and Korean languages for all Engineering graduates."]
+            },
+            {
+              "tag": "climate",
+              "patterns": ["How is the climate there?","Climatic condition at SRM","How is the climate where SRM is located?"],
+              "responses":[ "Tropical climate with rains (moderate to heavy) during October to December; January ? February very mild winter or pleasant and March to June - Summer, hot and humid (up to 40 degree C). July to September warm with occasional rain."]
+            },
+            {
+              "tag": "about_SRM",
+              "patterns": ["Tell me about SRM Institute of Science and Technology (formerly known as SRM University)","Information about SRM University","Facts about SRM University","History of SRM University"],
+              "responses": ["SRM Institute of Science and Technology (formerly known as SRM University), established as SRM Engineering College in 1985 got the university status in 2002. The university is located near Chennai with easy access by road, rail and air. This is rated as No. 1 multi-stream university in India and has been accredited by National Board of Accreditation (NBA), National Assessment and Accrediting Board (NAAC), Medical Council of India (MCI), Dental Council of India (DCI) and other statutory councils of India. The university, apart from the conventional programs, offers special collaborative programs like Semester Abroad Program (SAP), Twining / Transfer programs, Dual Degree programs in collaboration with reputed foreign universities."]
+            },
+            {
+              "tag": "about_SRM_RMP",
+              "patterns": ["Tell me about SRM Institute of Science and technology , Ramapuram","Information about SRM IST","Ramapuram","Facts about SRM Institute of Science and technology"],
+              "responses": ["SRM IST Ramapuram is one of the top-ranking universities in India with over 20,000 students and 1,500 faculty, offering a wide range of undergraduate, postgraduate, and doctoral programs in Engineering, Management, Medicine and Health Sciences, Science, and Humanities."]
+            },
+            {
+              "tag": "Architecture",
+              "patterns": ["Does SRM offers Architecture course?","Do SRM offer course in Architecture?"],
+              "responses":[ "Yes SRM ramapuram offers a course SRM SEAD , which offers a comprehensive program with a thrust on sustainable development in architecture, while nurturing students with critical thinking, artistic passion and advanced technological know-how."]
+            },
+            {
+              "tag": "Mechanical",
+              "patterns": ["Does SRM Ramapuram offers Mechanical Engineering?","Mechanical Engineering at SRM Ramapuram","Do SRM Ramapuram offer Mechanical Engineering?","Do SRM Ramapuram have Mechanical Engineering?"],
+              "responses":[ "Yes it does offers Mechanical engineering course ."]
+            },
+            {
+              "tag": "mech_sys",
+              "patterns": ["What does Mechanical Engineering in SRM offers in syllabus?","What syllabus is offered for Mechanical Engineering at SRM?","Mechanical Engineering syllabus at SRM"],
+              "responses": ["The Main Objective of  Mechanical Engineering is to provide a periodic updated curriculum, so that following the completion of the programme and with a few years of experience, our alumni will have expertise to :\n\nPractice Mechanical Engineering in Different Disciplines towards System Design, Realization and Manufacturing.\nEnhance Professional Practice to meet the Global Standards with Ethical and Social Responsibilities.\nSolve Industrial, Social and Environmental Problems with appropriate Techniques and Tools.\nWork in Large Cross Functional Terms and Pursue Lifelong Learnings\n"]
+            },
+            {
+              "tag": "Placement",
+              "patterns": ["Does SRM Ramapuram offers Placement ?","Do SRM IST Ramapuram offer placements?","Do we have placements at SRM IST campus?"],
+              "responses": ["Yes SRM IST Ramapuram assures 100% Placement in industries for all Engineering and Arts graduates."]
+            },
+            {
+              "tag": "interviews",
+              "patterns": ["Do they train the students to prepare for interviews ?","Do Srm train students for placements?","Do Srm offers placement training for students to appear for interviews?"],
+              "responses":[ "Yes SRM trains students for placements. Right from First Year onwards, the Aptitude skills, Technical knowledge and soft skills of the students will be enriched to meet the corporate expectations"]
+            },
+            {
+              "tag": "culturals",
+              "patterns": ["Does SRM  conducts any extra curricular/ cultural events  ?","Do Srm campus conducts cultural events?"],
+              "responses": ["Yes SRM conducts severl cultural events throughout every campus. Milan is the biggest cultural event ever connducted in a University."]
+            },
+            {
+              "tag": "internships",
+              "patterns": ["Does SRM provides internships ?","Do Srm provides students with internships?"],
+              "responses": ["Yes. In SRM it is mandate for every student to undergo internships between their first year and the second year of academic."]
+            },
+            {
+              "tag": "package",
+              "patterns": ["What is the highest package of student placed in SRM ?","Highest package of a stude"],
+              "responses": [ "32 lakhs, one of the highest packages offered during campus placements at SRM Institute of Science and Technology (formerly known as SRM University)."]
+            },
+            {
+              "tag": "statistics",
+              "patterns": ["What is the statistics of placement in SRM Ramapuram in the year 2020?"],
+              "responses": ["SRM IST Ramapuram Placement Highlights 2020\nTotal Recruiters\n600+\nStudents Placed Academic Year (2019-2020)\n8400+\nHighest Offer\nRs 39 LPA\nHighest offer offered by\nAdobe"]
+            },
+            {
+              "tag": "sport event",
+              "patterns": ["Does srm ramapuram conducts sport event?","Do srm supports sports events ? "],
+              "responses": ["Yes srm conducts sports events every year for various sports like cricket , basketball , volleyball , tennis ,.etc ."]
+            },
+            {
+              "tag": "rules",
+              "patterns": ["Is SRM ramapuram strict?","How is SRM ramapuram  in discipline?"],
+              "responses": ["About disciplines, SRM is strict, and you cannot use your mobile phone during the class."]
+            },
+            {
+              "tag": "better",
+              "patterns": ["Which is better SRM ramapuram or vadapalani?","Is there any difference between SRM ramapuram and SRM vadapalani?","Is SRM ramapuram better than SRM vadapalani?"],
+              "responses": ["There is no difference in both campus . Main campus will be always the BEST option for engineering .  RAMAPURAM will be the best  when compared with Vadapalani"]
+            },
+            {
+              "tag": "cost",
+              "patterns": ["Is SRM costly?","How costly is SRM?","What is the cost in SRM?"],
+              "responses": ["Medicine courses in SRM University are the most expensive and are an exception to the normal cost rate. SRM University Medical courses or an MBBS degree, which already has a reputation for being an expensive course to pursue, is priced at around INR 1 crore for five years."]
+            },
+            {
+              "tag": "ragging",
+              "patterns": ["Is there ragging in SRM University?","Ragging culture in SRM","Is ragging common in SRM?"],
+              "responses": ["There is no ragging in SRM campus or hostel. SRM is very strict about the ragging. ... There are strict rules regarding anti- ragging."]
+            },
+            {
+              "tag": "refund",
+              "patterns": ["Is SRM hostel fees refundable?","Is refund available in SRM hostel?","Refund facility in SRM hostel"],
+              "responses":["No refund is permitted during the middle of the course unless the candidate withdraws. Refund is not permitted if the student is expelled from the hostel. Hostel and Mess fees are subject to revision every year."]
+            },
+            {
+              "tag": "mba",
+              "patterns": ["Which srm campus is best for mba ?","mba course facility in SRM","Is SRM good for mba?"],
+              "responses": [ "Both KTR and RMP campus provides MBA , and KTR have better facilities including Libraries , Gym , Food court and etc."]
+            },
+            {
+              "tag": "lab",
+              "patterns": ["Does SRM ramapuram have computer lab facilities ?","How many labs does SRM have?","Are there labs facilities in SRM?","Are the labs good in SRM?"],
+              "responses": ["Yes it does, there are labs in every block that has installed latest versions of Systems for students to use"]
+            },
+            {
+              "tag": "parking",
+              "patterns": ["Does SRM Ramapuram have car parking?","Is there a car parking facility in SRM?","Are the car parking facilities good in SRM?"],
+              "responses":[ "Yes it does . Engineering students have seperate car parking similarly SEAD has individual parking area."]
+            },
+            {
+              "tag": "emergency",
+              "patterns": ["Does SRM provides medical assistance in case of emergency?","Emergency services in SRM","Is there a medical centre in SRM for emergency?"],
+              "responses": ["Yes every SRM campus has a medical center or hospitals in case of emergencies and for out patients too."]
+            },
+            {
+              "tag": "shuttle",
+              "patterns":[ "Does SRM university provides shuttle cabs for in-campus transportation?","Are shuttle bus available in SRM?","Does SRM have good shuttle cab facilities?"],
+              "responses": ["Yes srm university provides shuttle bus for transportation from outside campus to in campus."]
+            },
+            {
+              "tag": "generator",
+              "patterns": ["Does SRM provides back-up power generator ?","What generator facilities does SRM have in case of power failure?","SRM generator availability"],
+              "responses":[ " Yes in case of emergency or power failure" , " Back-up power is provided."]
+            },
+            {
+              "tag": "Elevator",
+              "patterns": ["Does SRM infrastructure provides Elevator services ?","Elevator facility in SRM","Does SRM infrastructure include elevators?" ],
+              "responses": ["Yes SRM university infrastructure provides standard quality Elevator services ."]
+            },
+            {
+              "tag": "canteen",
+              "patterns": ["Does SRM Ramapuram have canteen ?","How many canteens does SRM have?","Are SRM canteens good?","Which block has canteen in SRM rmp?"],
+              "responses": ["Yes it does. SRM rmp infrastructure includes two floors of food court near BMS block"]
+            },
+            {
+              "tag": "cricket",
+              "patterns": ["Does SRM Ramapuram have cricket ground ?","Cricket practices in SRM","Cricket ground facility in SRM"],
+              "responses": ["Yes SRM Ramapuram provides a ground for net practices."]
+            },
+            {
+              "tag": "transportation",
+              "patterns": ["Does SRM Ramapuram provides transportation for students ?","How are the transport facilities in SRM?","Are there any transport arrangements for SRM students?"],
+              "responses": ["Yes SRM ramapuram provides AC and Non- AC Bus for transportation services."]
+            },
+            {
+              "tag": "deemed",
+              "patterns": ["Is SRM Ramapuram a deemed university?","Is SRM IST a deemed university?","Is SRM Eeswari Engineering college a deemed university?"],
+              "responses": ["SRM Eeswari Engineering college comes under Anna University counselling , where SRM IST is a deemed university."]
+            },
+            {
+              "tag": "public_transport",
+              "patterns": ["Is there any public transportations to reach SRM ramapuram ?","What public transport is available for SRM?","How to reach SRM Ramapuramm in public transport?"],
+              "responses": [ "Yes there is. Government transportation such as MTC Buses routes are directly located near campus."]
+            },
+            {
+              "tag": "class_hours",
+              "patterns": ["What are the class hours for Arts and Science department ?","SRM class hours","What is the timing for SRMIST","Are the class hours same for all UG students in SRM?"],
+              "responses": ["Classes starts at 8 and ends at 1.15 for UG students in SRMIST."]
+            },
+            {
+              "tag": "certificates",
+              "patterns": ["Does SRM university provides any additional courses or certificates?","What certificates does SRM provide for additional courses?","Does Value added course in SRM have certificates?"],
+              "responses": ["Yes , SRM university provides training in additional courses namely Value Added Course to the syllabus in every department."]
+            },
+            {
+              "tag": "distance",
+              "patterns": ["Is SRM university located too far?","Wher is SRM Kattangulathur located?","Is SRM Kattangulathur near airport?","How far is SRM Kattangulathur from the airport?"],
+              "responses": ["SRM Kattangulathur is located 1.5 km away from airport ."]
+            },
+            {
+              "tag": "AICTE",
+              "patterns": ["Is srm university AICTE approved?","AICTE approval in SRM"],
+              "responses": ["Yes, SRM University is AICTE Approved."]
+            },
+            {
+              "tag": "UGC",
+              "patterns": ["Is SRM University UGC approved?","Is there a UGC approval in SRM?"],
+              "responses": ["SRM is one of the best ugc recognised universities in india which is well known for its best teaching rating and excellent research records"]
+            },
+            {
+              "tag": "PCB",
+              "patterns": ["What are the courses in B.Tech for which a student with PCB is eligible?","Couses available for PCB students at SRM"],
+              "responses": ["Candidates with Biology, Physics, Chemistry are eligible for admission to B.Tech in Biotechnology, Biomedical engineering and Genetic Engineering."]
+            },
+            {
+              "tag": "age_limit",
+              "patterns": ["Is there any age limit for PG programs?","What age limit is allowed for PG at SRM?","Does SRM PG program have age limit?"],
+              "responses": ["There is no age limit."]
+            },
+            {
+              "tag": "counseling",
+              "patterns": ["Is there any facility for us to stay in the campus when we come for counseling?","Are the SRM hostels available during counselling?"],
+              "responses": ["No, we don't have any facility. You have to make your own arrangement. However, you can stay at the SRM Hotel (Star Category) near the campus. You may contact them for availability of accommodation. The contact details are: Ph: 044-27454249, 27453156 Fax: 44 - 27454250,\nE-mail: hotels@srmuniv.ac.in\n"]
+            },
+            {
+              "tag": "deposit",
+              "patterns": ["Should we deposit the original certificates on the day of counseling?","Are the students supposed to deposit certificates in SRM?"],
+              "responses": ["No need to deposit, but you have to produce all original certificates for scrutiny by the University"]
+            },
+            {
+              "tag": "loan",
+              "patterns": ["Is SRM arranging for Educational loan through banks?","Loan facility in SRM"],
+              "responses": ["SRM Institute of Science and Technology (formerly known as SRM University) plays the role of a facilitator in this aspect. Number of banks will be available in the counseling venue to process loan application and issue on the- spot in -principle sanctioning letter."]
+            },
+            {
+              "tag": "candidates",
+              "patterns": ["Can parents attend the counseling instead of the candidate?","Is it compulsory for the student candidates to attend counselling at SRM?"],
+              "responses": ["Candidates must attend the counseling."]
+            },
+            {
+              "tag": "counseling_fee",
+              "patterns": ["Can we pay the counseling fee by cash?","Can we pay the SRM fee in cash?","Is cash accepted in SRM?"],
+              "responses":[ "No. All the fees have to be paid online transaction  or by DD."]
+            },
+            {
+              "tag": "compare",
+              "patterns": ["Compared to last year, which course has better scope?","Compared data of courses in SRM","How can the courses be compared in SRM?"],
+              "responses": ["All B.Tech programs offer fundamental engineering principles and specialization in chosen field. The trend of students? choice cannot be predicted now."]
+            },
+            {
+              "tag": "Quota",
+              "patterns": ["Is there any Sports Quota, if yes, how to apply?","Sports quota in SRM","Scholarships for sports quota in SRM"],
+              "responses": ["Yes. Any scholarships that are to be obtained will be approved by the scholarship committee."]
+            },
+            {
+              "tag": "CDC",
+              "patterns": ["What is Career Development centre about?","CDC in SRM for career","Is career development centre good in SRM?"],
+              "responses": ["The Career Development Centre at the SRM Institute of Science and Technology (formerly known as SRM University) understands the pulse of the corporate world and is helping the students to prepare for their careers. Besides, the Career Development Centre consists of leading members who are dedicated to providing guidance to the students on creating a clear career plan, setting realistic career goals and a planned timetable on professional development for their future. Exclusive training programs in soft skills and aptitude, online tests are given to students to make them assess skills in broader areas. The centre ensures to provide an optimum opportunity for all the students to fetch the most suited placement for them."]
+            },
+            {
+              "tag": "CDC_obj",
+              "patterns": ["What is the objective of CDC in srm?","Is CDC in SRM worth it?","What opportunities does CDC in SRM provide?"],
+              "responses": ["Our students are groomed with utmost concern to be the assets of the organization. Students are given wide exposure to academic subjects, sharpening their creative skills and their ability to think laterally."]
+            },
+            {
+              "tag": "good",
+              "patterns": ["Is SRM ramapuram a good college?","How good is SRM university?","Is SRM Ramapuram a good college to join?"],
+              "responses":[ "SRM Institute of Science and Technology, Ramapuram is a good college. Placements: Around 80% to 90% of the students got placed. ... Our college placements are good, and average students got placed in good companies. SRM Institute of Science and Technology, Ramapuram is good for placements."]
+            },
+            {
+              "tag": "main_campus",
+              "patterns":[ "Which is the main campus of SRM?"," Is kattangulathur the main campus in SRM?"],
+              "responses":[ "Kattankulathur Campus is the main campus of SRM."]
+            },
+            {
+              "tag": "Manipal",
+              "patterns": ["Is SRM better or Manipal?","Is Manipal better than SRM?","Is SRM better than Manipal?"],
+              "responses":[ "SRM University once sets a new placement record on Day-one with the top four IT companies offering jobs to 6064 students. Till then SRM is offering placement in some of the big companies in India. SRM has a better placement percentage than Manipal"]
+            },
+            {
+              "tag": "ranking",
+              "patterns": ["What ranking does SRM University, Ramapuram Campus hold?"," Where does SRM come in terms of rankings?"],
+              "responses": ["SRM University, Ramapuram Chennai has been recognized and awarded many times by top organizations. It has also been ranked in top positions by national and regional surveys conducted by top magazines and organizations. It was Ranked No.1 among the private institutes in India by Times Engineering Survey and ranked No. 2 among the private Universities by The Week. This institute ranked No. 1 private University in India Today."]
+            },
+            {
+              "tag": "compulsory",
+              "patterns": ["Is Hostel compulsory in SRM?","Are the hostels mandatory for students in SRM?"],
+              "responses":[ "No hostel is not compulsory for students at SRM"]
+            },
+            {
+              "tag": "negative_mark",
+              "patterns":[ "Is there any negative marking system in SRM entrance exam?","Are there negative markings in SRM entrance exams?"],
+              "responses": ["No , There is no negative marking ."]
+            },
+            {
+              "tag": "Andhra",
+              "patterns": ["Will SRM Andhra Pradesh and SRM Kattankulathur counselling be held together?","Is SRM Andhra counselling held with SRM Kattangulathur?"],
+              "responses":[ "Yes. The counselling for SRM University, Andhra Pradesh will be held together at Kattankulathur, Chennai and Amaravati, capital of Andhra Pradesh."]
+            },
+            {
+              "tag": "AP",
+              "patterns": ["What is the eligibility criteria for SRM ? AP ?"],
+              "responses":[ "For Engineering\nAbove 60% aggregate in Mathematics, Physics, and Chemistry in 12th standard CBSE / state board exam or equivalent\nQualification in SRMJEEE 2018\nFor Liberal Arts (BBA, BA, BSc, BCom)\nAbove 60% aggregate in 12th standard CBSE/ state board exam or quivalent"]
+            },
+            {
+              "tag": "change",
+              "patterns": ["Is it possible to change my branch preference given at the time of application, during counselling?","Can we change branches during counselling?" ],
+              "responses": ["Yes. You can choose any branch depending on the availability of seats."]
+            },
+            {
+              "tag": "marking",
+              "patterns": ["What is the marking scheme in SRM University?","Are SRM markings in grade system?","How are students Marked in SRM?"],
+              "responses": ["Based on the semester performance, each student is awarded a final letter grade at the end of the semester in each Course. The letter grades and the corresponding grade points are as follows:\n\nGrade Grade Points\nO 10\nA+ 9\nA 8\nB+ 7\nB 6\nC 5\nP 4\nF 0 (Fail Grade)\nAb 0 grade point (incomplete due to absence in the end semester examination; subsequently to be changed into pass (P to O) or F grade after appearing in the end semester examination.\n\n"]
+            },
+            {
+              "tag": "stream",
+              "patterns": ["Can I change my stream in SRM?","Are the streams changeable in SRM?","Does SRM offer change of stream for students?"],
+              "responses": ["No, you cannot."]
+            },
+            {
+              "tag": "ID",
+              "patterns": ["Is it mandatory to wear ID card ?","Should the students wear ID cards in SRM?","Is ID card compulsory in SRM?"],
+              "responses": ["It is mandatory for all the student to carry and wear Identity Card during the University classes hours and cooperate with the security personnel as and when asked far in order to maintain discipline in the campus."]
+            },
+            {
+              "tag": "recreational",
+              "patterns": ["What are the recreational facilities available in the hostel?","Does SRM have any recreational facility?","What are the recreational facilities are available in SRM?"],
+              "responses": ["There are separate ‘Gymnasiums’ for Boys hostel and Girls hostel. In addition to the above, sports materials such as Cricket Bats, Shuttlecocks, Throw balls, Volley balls and Indoor games are available in each block. Movies are arranged periodically at the common area of the hostels (or) University open auditorium. Student activity centre and incubation centers are available in the University Complex."]
+            },
+            {
+              "tag": "Service",
+              "patterns": ["Is there a Laundry Service available in the hostel?","Is there any dry cleaning service at SRM hostel?","Are the laundery service good at SRM?"],
+              "responses": ["SRM Hostel provides laundry and dry cleaning service to the hostellers. Equipped with state-of-the art machinery, every kind of cloth and fabric can be serviced."]
+            },
+            {
+              "tag": "Chennai",
+              "patterns": ["Will Direct Admission be held in SRM University in Chennai Campus?","Do we have to come to chennai for direct admission?","Is the SRM direct admission held at chennai?"],
+              "responses": ["Direct Admission to SRM University of Engineering only after you have cleared your class 12th with an average score of 60% together in PCM ( Physics, Chemistry, Mathematics).\nAdmission to SRM University Engineering College through management quota seats or institutional quota seats are available if you are willing to pay extra tuition fees per year more than normal fees.\nSRM University is for students who can afford to pay a high per annum fees to the college for admission in B.Tech, B.Design, B.Arch, and M.Tech.\nFor Admission In B.Tech Srm University Chennai campus, it is compulsory to apply for the SRMJEEE entrance test and write the online entrance test.\nIf you appear for the exams then you can apply for management quota seats for admission in SRM college 1st campus and the 2nd campus located in Chennai."]
+            },
+            {
+              "tag": "Hostel_Rules",
+              "patterns": ["What are the hostel rules in SRM?","Rules followed by hostel in SRM"],
+              "responses": ["Students should not go out of the University after 9.00 pm. Biometric attendance in hostel is compulsory before 10 pm. No day-scholars will be permitted into the hostel area under any circumstances. Hostel students must park their two wheelers, cars etc."]
+            },
+            {
+              "tag": "attendance",
+              "patterns": ["Is attendance compulsory in SRM?","Minimum attendace percentage required in SRM?","What is the attendace percentage required to appear for semester exam ?"],
+              "responses": ["A student must maintain an attendance record of at least 75% in all courses added together. Without the minimum attendance of 75%, students become ineligible to write the end semester examination. permitted to appear in end semester examination."]
+            },
+            {
+              "tag": "CGPA",
+              "patterns": ["How is SRM CGPA calculated?","How to calculate CGPA in SRM?"],
+              "responses":[ "For the cumulative grade point average (CGPA) following formula is used: Where Si = Sum of credits in ith semester, (SGPA) =Semester Grade Point Average earned in ith semester rand r = number of semesters and the sum is over all the semesters under consideration."]
+            },
+            {
+              "tag": "percentage",
+              "patterns": ["How is SRM percentage calculated?","How to calculate percentage in SRM?"],
+              "responses": ["[SRM University, is a private deemed university located in Kattankulathur, Tamil Nadu, India. It was founded in 1985 as SRM Engineering College in Kattankulathur, under University of Madras. Just multiply your cgpa with 9.5 to convert it to percentage"]
+            },
+            {
+              "tag": "fullform",
+              "patterns": ["What is the full form of SRM?","Full form of SRM","SRM full form"],
+              "responses": ["SRM Institute of Science and Technology, or Sri Ramaswamy Memorial Institute of Science and Technology, formerly SRM University, is a deemed university located in Chennai, Tamil Nadu, India. So, the full form is Sri Ramaswamy Memorial."]
+            },
+            {
+              "tag": "difficult",
+              "patterns": ["Is Srmjee difficult?","Is Srmjee easy or tough?"],
+              "responses": ["SRMJEEE is an Online Examination that is actually not a very tough exam. The syllabus for both SRMJEE and JEE Main is almost similar. To crack SRM Joint Entrance Examination Engineering candidates require to carry out an assessment of the concepts taught in NCERT textbooks. Candidates appearing for SRM Entrance Examination can go through this article to check SRMJEEE 2021 Preparation tips.  Candidates can refer to this article regarding preparation tips of SRMJEEE 2021."]
+            },
+            {
+              "tag": "joining",
+              "patterns": ["Is SRM worth joining?","Is taking admission in SRM University worth?"],
+              "responses": ["Yes,it is worth taking admission in SRM University. The infrastructure is amazing. The faculty is very supportive. They guide you regarding the research work."]
+            },
+            {
+              "tag": "without_entrance",
+              "patterns": ["Can I get admission in SRM without Srmjeee?","Is it mandatory to clear SRMJEE for getting a seat in SRM?"],
+              "responses": ["In normal admission process, you have to clear SRMJEE for getting a seat in SRM. But most of the private colleges have some seats through management quota. SRM also provides seats through management quota I.e. called direct admission."]
+            },
+            {
+              "tag": "direct_admission",
+              "patterns": ["Does SRM give direct admission?","Which entrance exam is conducted for Engineering Admission?"],
+              "responses":[ "SRMJEE is conducted as Entrance exams for Engineering course Admission in SRM college."]
+            },
+            {
+              "tag": "government_college",
+              "patterns": ["Is SRM a government college?","SRM government or private college?"],
+              "responses": ["SRM Institute of Science and Technology is a private deemed university"]
+            },
+            {
+              "tag": "Tier 1",
+              "patterns": ["Is SRM a Tier 1 college?"],
+              "responses": ["Its a Tier 1 Deemed to be University ( previously University ). Changed due to govt. rule of not naming any private institutions asUniversities in India. Its a Tier 1 Deemed to be University ( previously University )."]
+            },
+            {
+              "tag": "Centers",
+              "patterns": ["Do you have Student Information Centers who can provide direct information?","Do SRM have Student Information Centers who can provide direct information?"],
+              "responses":["Yes. You can reach out to our network of Student Information Centres across Middle East, Africa and Asia. \nFor details you can mail us at:  admissions.ir@srmuniv.ac.in or call +91 44 4743 7500 / +91 44 2745 5510"]
+            },
+            {
+              "tag": "nri_seats",
+              "patterns": ["What is the total number of seats for foreign/NRI quota?","Reservation of seats for foreign/NRI quota"],
+              "responses": [" Generally 15% of the total seats is reserved for foreign/ NRI quota."]
+            },
+            {
+              "tag": "concession",
+              "patterns": ["Is there any provision for concession or scholarships?","Do SRM provide scholarship to students?"],
+              "responses": ["Yes. Total scholarship worth of USD 200,000 is awarded to the meritorious students who passed out from CBSE schools, \"A\" Levels, IB and WAEC and got admission in the faculty of Engineering and Technology in SRM Institute of Science and Technology (formerly known as SRM University) under NRI / foreign quota. The amount of scholarship will be based on the recommendation of the scholarship committee. This scholarship is applicable only for the first year. Subsequent year scholarship is based on the performance in the previous year."]
+            },
+            {
+              "tag": "medical",
+              "patterns": ["What medical facilities are available to students admitted?","What are the medical facilities available to students in the college?"],
+              "responses": ["All students admitted will be covered by Mediclaim insurance policy on chargeable basis. This facilitates the policy holder for cashless hospitalization in SRM as well as many hospitals throughout India. SRM has a 1200-bed hospital of its own within the campus."]
+            },
+            {
+              "tag": "TANCET",
+              "patterns": ["Does SRM accept TANCET Score for MCA?","Is TANCET compulsory for MCA in SRM?","Is TANCET required for joining MCA at SRM?"],
+              "responses": ["No.50% in BCA / B.Sc. Computer Science / B.Sc. Information Technology or any other relative courses"]
+            },
+            {
+              "tag": "MCA",
+              "patterns": ["Is SRM good for MCA?","Is it worth doing MCA at SRM?"],
+              "responses": ["Yes.MCA has got a better platform in SRM University.Many of my friends were placed with a sound package."]
+            },
+            {
+              "tag": "M.Tech",
+              "patterns": ["What is the admission criteria for M Tech?","M Tech admission criteria"],
+              "responses": ["Admission to M.Tech. is based on SRMJEEE (PG) or GATE or TANCET score."]
+            },
+            {
+              "tag": "CSE",
+              "patterns": ["Is SRM good for CSE?","Scope for joining CSE at SRM"],
+              "responses": ["Placements at SRM are very good, more than 2000 companies visited our college that helped almost all the students to get placed. ... Highest salary is 41 lpa by Microsoft to a cse student. Average package at our college is 4 lpa. Placements at college are good and staff are really supportive."]
+            },
+            {
+              "tag": "MBA_process",
+              "patterns":[ "What is the selection process to get into MBA at SRM University?","How a candidate will be shortlisted for MBA at SRM University?","Selection process for MBA at Srm"],
+              "responses":[ "Final selection of the candidates in MBA is based on the scores obtained in SRMJEEM or any other national-level management examination such as CAT, XAT, MAT, CMAT, GMAT, NMAT."]
+            },
+            {
+              "tag": "library",
+              "patterns":[ "How is the library of SRM?","Do SRM have a library?","Tell me about SRM library"],
+              "responses":[ "SRM has an excellent library for the benefit of students, faculties and researchers.It is fully Air Conditioned and automated with RFID (Radio Frequency Identification) technology."]
+            },
+            {
+              "tag": "campus_life",
+              "patterns":[ "How is life at SRM University?","Tell me about the campus life at SRM University","How is the campus life at SRM University?"],
+              "responses":[ "It is pretty chill. The campus is clean and green and actually perfect for photoshoots. ... Student clubs are highly active, from tech stuff to literary, there's something for everyone."]
+            },
+            {
+              "tag": "bike",
+              "patterns":[ "Is bike allowed in SRM?","Do Srm allow students to park bikes inside the campus?","Does Srm students are allowed to come in bike?" ],
+              "responses":["Yes.They do have a separate space for parking.Hostelites are required to keep their bicycles at the stand properly locked. If any student's vehicle is found in any other place, the concerned student will be subjected to a fine of Rs. 1,000/- per violation"]
+            },
+            {
+              "tag": "laptop",
+              "patterns":[ "Does SRM provide laptop?","Will Srm provide laptop for students?","Is laptops provided for Srm students?"],
+              "responses":[ "We are providing the most useful configured laptop for students at the best price. ... This offer is applicable to all students - I, II,III and IV Year of SRM University , across all the campuses - Kattankulathur, Ramapuram, Ramapuram Part : Vadapalani and NCR."]
+            },
+            {
+              "tag": "doctorate",
+              "patterns":[ "Do SRM offer doctorate students with education?","Is Srm offering doctorate for students with education?","Does Srm offer doctorate?"],
+              "responses":[ "Presently, over 12 research scholars are pursuing their doctorate in Education. ... Apart from academic research, the department takes part in projects with various national and state level teacher education organizations."]
+            },
+            {
+              "tag": "PhD",
+              "patterns":[ "Is doing a PhD at SRM University worth it?","Is PhD in Srm worth?","Is it easy to get admission for PhD in Srm?" ],
+              "responses":[ "Yes.At SRM University you can easily get your PhD by paying 2–3 lakhs. The admission process is very easy and the guides are from the same university. You will be offered all help to get degree within 3 years"]
+            }
+        ]
+}
+        
